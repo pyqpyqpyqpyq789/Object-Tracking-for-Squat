@@ -39,7 +39,7 @@ if __name__ == '__main__':
     print('frame.shape', frame.shape)
     lam = 1
     fourcc = cv2.VideoWriter_fourcc(*'XVID')  # 保存视频的编码
-    out = cv2.VideoWriter('football_output.avi', fourcc, 20.0, (frame.shape[1], frame.shape[0]))
+    out = cv2.VideoWriter('_output.avi', fourcc, 20.0, (frame.shape[1], frame.shape[0]))
     for i in range(number):
         gROI = cv2.selectROI("ROI frame", frame, False)
         ROI_area[i] = [gROI[1], gROI[1] + gROI[3], gROI[0], gROI[0] + gROI[2]]
@@ -128,5 +128,5 @@ if __name__ == '__main__':
 
     cap.release()
     cv2.destroyAllWindows()
-    command = "ffmpeg -i football_output.avi football_output.mp4"
+    command = "ffmpeg -i _output.avi _output.mp4"
     call(command.split())
