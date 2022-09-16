@@ -9,5 +9,5 @@ ffmpeg=1.4
 
 Please consider citing this work if you find this repo is useful for your projects.
 ```
-Yunxiang Pang, et al., "Auxiliary Squat Training Method Based on Object Tracking", 3rd IEEE International Conference on Advances in Electrical Engineering and Computer Applications, 2022.
+Yunxiang Pang, et al., "Auxiliary Squat Training Method Based on Object Tracking", 6th International Conference on Artificial Intelligence and Virtual Reality, 2022.
 ```
